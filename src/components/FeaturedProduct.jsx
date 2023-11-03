@@ -12,7 +12,7 @@ function FeaturedProduct() {
       }}>
         <Grid item xs={7}>
         <Box sx={{
-              padding: '0 100px'
+              padding: '0 15%'
             }}>
             <Typography variant='h4' sx={{
               fontWeight: '700'

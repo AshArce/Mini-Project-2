@@ -9,9 +9,8 @@ export const Item = styled(Paper)(() => ({
 }));
 
 // Popular Picks
-export const popPicItem={
+export const greenBoxBg={
   height: 'auto',
-  padding: '50px',
   backgroundColor: '#39A848'
 };  
 

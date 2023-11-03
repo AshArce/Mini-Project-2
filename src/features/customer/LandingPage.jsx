@@ -13,7 +13,7 @@ function LandingPage() {
       <Header />
       
       <FeaturedProduct/>
-      <Box sx={{padding: '200px'}} style={styles.popPicItem}>
+      <Box sx={{padding: '5vh'}} style={styles.greenBoxBg}>
       <PopularPicks/>
       </Box>
     </> 

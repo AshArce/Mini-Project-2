@@ -7,9 +7,12 @@ import SearchBar from './SearchBar'
 function Header() {
   return (
       <Container>
-      <Grid  container spacing={1} justifyContent='center'>
+      <Grid className='headerGrid'  
+            container spacing={1} 
+            justifyContent='center'
+              sx={{padding: '2% 0px'}}>
         <Grid  item xs={3}>
-          <Typography sx={{padding: '0px 50px'}}>
+          <Typography sx={{padding: '0px 25%'}}>
             Kartcheck
           </Typography>
         </Grid> 
