@@ -11,7 +11,13 @@ export const Item = styled(Paper)(() => ({
 // Popular Picks
 export const popPicItem={
   height: 'auto',
-  backgroundColor: '#39A848',
-  padding: '100px'
-  
+  padding: '50px',
+  backgroundColor: '#39A848'
 };  
+
+export const popText={
+  color: 'white',
+  fontFamily: 'Poppins',
+  fontWeight: '600',
+  wordWrap: 'break-word'
+}

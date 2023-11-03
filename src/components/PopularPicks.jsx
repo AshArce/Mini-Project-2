@@ -1,4 +1,4 @@
-import { Box, Button, Container, Grid, Typography } from '@mui/material'
+import { Box, Button,  Grid, Paper, Typography } from '@mui/material'
 import React from 'react'
 import * as styles from './style';
 
@@ -14,51 +14,60 @@ function PopularPicks() {
 
       <Grid 
       container
-      justifyContent="center"
+      justifyContent="space-between"
       alignItems={'center'}>
         
-        <Grid container spacing={4} xs={6}>
+        <Grid container spacing={2} xs={6}>
               <Grid item xs={6}>
-                    <img src="#"/>
-                    <Typography>try</Typography>
+                    <Paper 
+                    sx={{ height: '200px'}}>
+                      123
+                    </Paper>
               </Grid>
               <Grid item xs={6}>
-                    <img src="#"/>
-                    <Typography>try</Typography>
+                    <Paper 
+                    sx={{ height: '200px'}}>
+                      123
+                    </Paper>
               </Grid>
               <Grid item xs={6}>
-                    <img src="#"/>
-                    <Typography>try</Typography>
+                    <Paper 
+                    sx={{ height: '200px'}}>
+                      123
+                    </Paper>
               </Grid>
               <Grid item xs={6}>
-                    <img src="#"/>
-                    <Typography>try</Typography>
+                    <Paper 
+                    sx={{ height: '200px'}}>
+                      123
+                    </Paper>
               </Grid>
       </Grid>
         <Grid 
           container
           direction="column"
-          justifyContent=" flex-start "
-          alignItems="center"
-          
+          textAlign='start'
+          rowSpacing={7}
           xs={6}
           
           >
-            <Grid item xs={2}>
+            <Grid style={styles.popText} item xs={2}>
               <Typography variant='h5'>
                 Popular Items
               </Typography>
             </Grid>
-            <Grid item xs={4}>
+            <Grid style={styles.popText} item xs={4}>
               <Typography variant='h3'>
                 Hot Trending on this Week.
               </Typography>
             </Grid>
-            <Grid item xs={4}>
+            <Grid style={styles.popText} item xs={4}>
               <Typography variant='h6'>
                 Various kinds of products that are trending the trend will be reset every week. Don't miss out on the best of items every week.
-              </Typography> 
-              <Button>button</Button>             
+              </Typography>
+              <Grid>
+              <Button>button</Button> 
+              </Grid>            
             </Grid>
         </Grid>
       </Grid>
