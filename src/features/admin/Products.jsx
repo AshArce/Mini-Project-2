@@ -1,9 +1,9 @@
-import React from 'react'
 import { Grid, Paper } from '@mui/material'
+import React from 'react'
 import AdminNavigations from './AdminNavigations'
-import Products from './Products'
+import Dashboard from './Dashboard'
 
-function Dashboard() {
+function Products() {
   return (
     <AdminNavigations>
       
@@ -11,4 +11,4 @@ function Dashboard() {
   )
 }
 
-export default Dashboard
+export default Products

@@ -12,30 +12,31 @@ import { Item } from './style.js';
 function NavigationBar() {
   return (
     
-      <Grid container justifyContent='center' spacing={1} >
-        <Grid item xs={3}>
-          <Item>
-            <Link>Home</Link>
-          </Item>
-        </Grid>
-        <Grid item xs={3}>
-          <Item>
-            <Link>All Products</Link>
-          </Item>
-        </Grid>
-        <Grid item xs={3}>
-          <Item>
-            <Link>
-              Category
-            </Link>
-          </Item>
-        </Grid>
-        <Grid item xs={2}>
-          <Item>
-            <LoginModal />
-          </Item>
-        </Grid>
-      </Grid>
+    <Grid container justifyContent='center' spacing={1} >
+    <Grid item xs={3}>
+      <Item>
+        <Link>Home</Link>
+      </Item>
+    </Grid>
+    <Grid item xs={3}>
+      <Item>
+        <Link>All Products</Link>
+      </Item>
+    </Grid>
+    <Grid item xs={3}>
+      <Item>
+        <Link>
+          Category
+        </Link>
+      </Item>
+    </Grid>
+    <Grid item xs={2}>
+      <Item>
+        <LoginModal />
+      </Item>
+    </Grid>
+  </Grid>
+
     
   );
 }
