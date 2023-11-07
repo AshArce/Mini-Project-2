@@ -3,7 +3,8 @@ import React from 'react'
 import Header from '../../components/Header'
 import FeaturedProduct from '../../components/FeaturedProduct'
 import PopularPicks from '../../components/PopularPicks'
-import * as styles from '../../components/style'
+import TopSelling from '../../components/TopSelling'
+import RegisterBox from '../../components/RegisterBox'
 import { Box } from '@mui/material'
 
 function LandingPage() {
@@ -13,8 +14,11 @@ function LandingPage() {
       <Header />
       
       <FeaturedProduct/>
-      <Box sx={{padding: '5vh'}} style={styles.greenBoxBg}>
+      <Box sx={{padding: '5vh',
+                backgroundColor: 'green'}} >
       <PopularPicks/>
+      <TopSelling />
+      <RegisterBox />
       </Box>
     </> 
   )

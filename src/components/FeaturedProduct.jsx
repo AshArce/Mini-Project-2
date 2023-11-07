@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Button, Grid, Typography } from '@mui/material'
-import * as styles from "./style.js"
+import * as styles from './style.js'
 
 function FeaturedProduct() {
   return (
@@ -14,26 +14,29 @@ function FeaturedProduct() {
         <Box sx={{
               padding: '0 15%'
             }}>
-            <Typography variant='h4' sx={{
+            <Typography  variant='h5' sx={{
               fontWeight: '700'
             }}>
             FEATURED PRODUCT
             </Typography>
             
-            <Typography sx={{
+            <Typography  sx={{
               fontWeight: '300',
-              padding: '10px 0px'
+              padding: '10px 0px',
+              fontSize: '0.7rem'
             }}>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum aperiam nam ipsa optio dolorem consequatur temporibus obcaecati, corrupti odio molestias.
             </Typography>
             <Typography>
               Price: $$$
             </Typography>
+            <Grid container>
           <Button>read more</Button>
           <Button>add to cart</Button>
+          </Grid>
           </Box>
         </Grid>
-        <Grid item xs={5} style={styles.flexJustCenter}>
+        <Grid item xs={5}>
           <img src='#'></img>
         </Grid>
       </Grid>
