@@ -10,17 +10,24 @@ import Toolbar from '@mui/material/Toolbar';
 import { Link } from 'react-router-dom';
 import Dashboard from './Dashboard';
 import Products from './Products';
-import { AppBar, IconButton, Typography, useMediaQuery, useTheme  } from '@mui/material';
+import { AppBar, Typography, useMediaQuery, useTheme  } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+import IconButton from '@mui/material/IconButton';
+import { styled } from '@mui/system';
+
 
 
 const drawerWidth = 240;
+const StyledAppBar = styled('div')`
+  display: block;
+`;
 
 function AdminNavigations(props) {
   const { window } = props;
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
-  const [mobileOpen, setMobileOpen] = React.useState(isMobile);
+  
+  const [mobileOpen, setMobileOpen] = React.useState(isMobile)
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -50,14 +57,15 @@ function AdminNavigations(props) {
   const container = window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: 'flex' }}>
-      <AppBar
+    <Box sx={{ display: 'flex',
+               margin: 0 }}>
+      <StyledAppBar
           position="fixed"
           sx={{ 
             backgroundColor: 'transparent',
             color: 'black',
-            width: { sm: `calc(100% - ${drawerWidth}px)` },
-            ml: { sm: `${drawerWidth}px` },
+            width: mobileOpen ? `calc(100% - ${drawerWidth}px)` : '100%', // Adjust width
+            ml: mobileOpen ? `${drawerWidth}px` : 0, // Adjust margin-left
           }}
       >
           <Toolbar>
@@ -67,17 +75,17 @@ function AdminNavigations(props) {
               aria-label="open drawer"
               edge="start"
               onClick={handleDrawerToggle}
-              sx={{ mr: 2, display: { sm: 'none' } }}
+              sx={{mr: 2,}}
             >
               <MenuIcon />
             </IconButton>
           )}
         </Toolbar>
-        </AppBar>
+        </StyledAppBar>
 
       <Box
         component="nav"
-        sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
+        sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 }}}
         aria-label="mailbox folders"
       >
         <Drawer
@@ -108,7 +116,10 @@ function AdminNavigations(props) {
       </Box>
       <Box
         component="main"                  
-        sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` }}}
+        sx={{flexGrow: 1,
+          p: isMobile && !mobileOpen ? 1 : 3, // Adjust padding
+          width: mobileOpen ? `calc(100% - ${drawerWidth}px)` : '100%', // Adjust width
+          transition: 'padding 0.2s',}}
       >
         {/* Your main content */}
       </Box>
