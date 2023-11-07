@@ -1,7 +1,9 @@
-// Dashboard.js
+
+
 import React from 'react';
 import AdminNavigations from './AdminNavigations';
 import { styled } from '@mui/system'; // Updated import statement
+
 
 const Container = styled('div')`
   display: flex;

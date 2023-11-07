@@ -2,3 +2,19 @@
   background-color: aquamarine;
   
 } */  
+
+
+
+@media (max-width: 768px) {
+  a {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+}
+
+@media (min-width: 1025px) {
+/* Styles for screens wider than 1024px */
+}
