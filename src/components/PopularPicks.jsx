@@ -3,217 +3,241 @@ import { Grid, Paper, Typography } from "@mui/material";
 
 const PopularPicks = (props) => {
   return (
-    
+
     <Grid container
-          direction={"column-reverse"}
-          spacing={1}>
+      direction={"column-reverse"}
+      spacing={1}>
       <Grid container
-             direction={'row'} 
-             item xs={6}
-             spacing={3}>
+        direction={'row'}
+        item xs={6}
+        spacing={3}>
         <Grid item
-               xs={6}>
-        <Paper
-          elevation={3}
-          style={{
-            backgroundColor: "#FFFFFF",
-            padding: "9px",
-            borderRadius: "15px",
-            height: "100px",
-            width:'100%',
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "start",
-            justifyContent: "flex-end",
-          }}
-        >
-          <div style={{
-             display: "flex", 
-             flexDirection: "column", 
-             alignItems: "start", 
-             justifyContent: "start",  
-             marginTop: "209px"}}>
-
-            <Typography 
-            variant="p" 
-            style={{ fontWeight: "bold", 
-                     fontFamily: "Poppins", 
-                     color: "#000000", }}>
-              {props?.itemname}
-            </Typography>
-            <Typography 
-            variant="h6" 
-            style={{ fontWeight: "bold", 
-                     fontFamily: "Poppins", 
-                     color: "#000000", }}>
-              {props?.itempcounter}
-            </Typography>
-            
-          </div>
-        </Paper>
-      </Grid>
-      <Grid item xs={6}>
+          xs={6}>
           <Paper
-          elevation={3}
-          style={{
-            backgroundColor: "#FFFFFF",
-            padding: "9px",
-            borderRadius: "15px",
-            height: "100px",
-            width:'100%',
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "start",
-            justifyContent: "flex-end",
-          }}
-        >
-          <div style={{
-             display: "flex", 
-             flexDirection: "column", 
-             alignItems: "start", 
-             justifyContent: "start",  
-             marginTop: "209px"}}>
+            elevation={3}
+            style={{
+              backgroundColor: "#FFFFFF",
+              padding: "9px",
+              borderRadius: "15px",
+              height: "100px",
+              width: '100%',
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "start",
+              justifyContent: "flex-end",
+            }}
+          >
+            <div style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "start",
+              justifyContent: "start"
+            }}>
 
-            <Typography 
-            variant="p" 
-            style={{ fontWeight: "bold", 
-                     fontFamily: "Poppins", 
-                     color: "#000000", }}>
-              {props?.itemname}
-            </Typography>
-            <Typography 
-            variant="h6" 
-            style={{ fontWeight: "bold", 
-                     fontFamily: "Poppins", 
-                     color: "#000000", }}>
-              {props?.itempcounter}
-            </Typography>
-            
-          </div>
-        </Paper>
+              <Typography variant="p"
+                style={{
+                  fontWeight: "bold",
+                  fontFamily: "Poppins",
+                  color: "#000000",
+                }}>
+
+                {props?.itemname}
+              </Typography>
+              <Typography
+                variant="h6"
+                style={{
+                  fontWeight: "bold",
+                  fontFamily: "Poppins",
+                  color: "#000000",
+                }}>
+                {props?.itempcounter}
+              </Typography>
+
+            </div>
+          </Paper>
+        </Grid>
+        <Grid item xs={6}>
+          <Paper
+            elevation={3}
+            style={{
+              backgroundColor: "#FFFFFF",
+              padding: "9px",
+              borderRadius: "15px",
+              height: "100px",
+              width: '100%',
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "start",
+              justifyContent: "flex-end",
+            }}
+          >
+            <div style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "start",
+              justifyContent: "start"
+            }}>
+
+              <Typography
+                variant="p"
+                style={{
+                  fontWeight: "bold",
+                  fontFamily: "Poppins",
+                  color: "#000000",
+                }}>
+                {props?.itemname}
+              </Typography>
+              <Typography
+                variant="h6"
+                style={{
+                  fontWeight: "bold",
+                  fontFamily: "Poppins",
+                  color: "#000000",
+                }}>
+                {props?.itempcounter}
+              </Typography>
+
+            </div>
+          </Paper>
+        </Grid>
+        <Grid item xs={6}>
+          <Paper
+            elevation={3}
+            style={{
+              backgroundColor: "#FFFFFF",
+              padding: "9px",
+              borderRadius: "15px",
+              height: "100px",
+              width: '100%',
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "start",
+              justifyContent: "flex-end",
+            }}
+          >
+            <div style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "start",
+              justifyContent: "start"
+            }}>
+
+              <Typography
+                variant="p"
+                style={{
+                  fontWeight: "bold",
+                  fontFamily: "Poppins",
+                  color: "#000000",
+                }}>
+                {props?.itemname}
+              </Typography>
+              <Typography
+                variant="h6"
+                style={{
+                  fontWeight: "bold",
+                  fontFamily: "Poppins",
+                  color: "#000000",
+                }}>
+                {props?.itempcounter}
+              </Typography>
+
+            </div>
+          </Paper>
+        </Grid>
+        <Grid item xs={6}>
+          <Paper elevation={3}
+            style={{
+              backgroundColor: "#FFFFFF",
+              padding: "9px",
+              borderRadius: "15px",
+              height: "100px",
+              width: '100%',
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "start",
+              justifyContent: "flex-end",
+            }}
+          >
+            <div style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "start",
+              justifyContent: "start"
+            }}>
+
+              <Typography
+                variant="p"
+                style={{
+                  fontWeight: "bold",
+                  fontFamily: "Poppins",
+                  color: "#000000",
+                }}>
+                {props?.itemname}
+              </Typography>
+              <Typography
+                variant="h6"
+                style={{
+                  fontWeight: "bold",
+                  fontFamily: "Poppins",
+                  color: "#000000",
+                }}>
+                {props?.itempcounter}
+              </Typography>
+
+            </div>
+          </Paper>
+        </Grid>
       </Grid>
+
       <Grid item xs={6}>
-        <Paper
-          elevation={3}
+        <Typography
+          variant="h3"
           style={{
-            backgroundColor: "#FFFFFF",
-            padding: "9px",
-            borderRadius: "15px",
-            height: "100px",
-            width:'100%',
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "start",
-            justifyContent: "flex-end",
-          }}
-        >
-          <div style={{
-             display: "flex", 
-             flexDirection: "column", 
-             alignItems: "start", 
-             justifyContent: "start",  
-             marginTop: "209px"}}>
-
-            <Typography 
-            variant="p" 
-            style={{ fontWeight: "bold", 
-                     fontFamily: "Poppins", 
-                     color: "#000000", }}>
-              {props?.itemname}
-            </Typography>
-            <Typography 
-            variant="h6" 
-            style={{ fontWeight: "bold", 
-                     fontFamily: "Poppins", 
-                     color: "#000000", }}>
-              {props?.itempcounter}
-            </Typography>
-            
-          </div>
-        </Paper>
-      </Grid>
-      <Grid item xs={6}>
-        <Paper
-          elevation={3}
-          style={{
-            backgroundColor: "#FFFFFF",
-            padding: "9px",
-            borderRadius: "15px",
-            height: "100px",
-            width:'100%',
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "start",
-            justifyContent: "flex-end",
-          }}
-        >
-          <div style={{
-             display: "flex", 
-             flexDirection: "column", 
-             alignItems: "start", 
-             justifyContent: "start",  
-             marginTop: "209px"}}>
-
-            <Typography 
-            variant="p" 
-            style={{ fontWeight: "bold", 
-                     fontFamily: "Poppins", 
-                     color: "#000000", }}>
-              {props?.itemname}
-            </Typography>
-            <Typography 
-            variant="h6" 
-            style={{ fontWeight: "bold", 
-                     fontFamily: "Poppins", 
-                     color: "#000000", }}>
-              {props?.itempcounter}
-            </Typography>
-            
-          </div>
-        </Paper>
-      </Grid>
-    </Grid>
-
-      <Grid item xs={6}>
-        <Typography 
-          variant="h3" 
-          style={{ fontWeight: "bold", 
-                   fontFamily: "Poppins", 
-                   color: "#FFFFFF", 
-                   fontSize: '2rem' }}>
+            fontWeight: "bold",
+            fontFamily: "Poppins",
+            color: "#FFFFFF",
+            fontSize: '2rem'
+          }}>
           {props?.popularitem}
         </Typography>
 
-        <Typography 
-          variant="h2" 
-          style={{ fontWeight: "bold", 
-                   fontFamily: "Poppins", 
-                   color: "#FFFFFF", 
-                   maxWidth: "455px", 
-                   fontSize: "3rem", 
-                   lineHeight: "40px" }}>
+        <Typography variant="h2"
+          style={{
+            fontWeight: "bold",
+            fontFamily: "Poppins",
+            color: "#FFFFFF",
+            maxWidth: "455px",
+            fontSize: "3rem",
+            lineHeight: "40px"
+          }}>
+
           {props?.hottrendingon}
         </Typography>
-        
-        <Typography 
-          variant="h6" 
-          style={{ fontWeight: "bold", 
-                   fontFamily: "Poppins", 
-                   color: "#FFFFFF", 
-                   maxWidth: "455px", 
-                   fontSize: '1rem' }}>
+
+        <Typography variant="h6"
+          style={{
+            fontWeight: "bold",
+            fontFamily: "Poppins",
+            color: "#FFFFFF",
+            maxWidth: "455px",
+            fontSize: '1rem'
+          }}>
           {props?.description}
         </Typography>
 
-        <div style={{ display: "flex", 
-                      flexDirection: "row", 
-                      alignItems: "start", 
-                      justifyContent: "start" }}>
-          <Typography 
-            variant="h6" 
-            style={{ fontWeight: "bold", 
-                     fontFamily: "Poppins", 
-                     color: "#FFFFFF" }}>
+        <div style={{
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "start",
+          justifyContent: "start"
+        }}>
+          <Typography
+            variant="h6"
+            style={{
+              fontWeight: "bold",
+              fontFamily: "Poppins",
+              color: "#FFFFFF"
+            }}>
             {props?.seeall}
           </Typography>
 
@@ -222,7 +246,7 @@ const PopularPicks = (props) => {
             alt="rightarrowOne"
             style={{ height: "5px", width: "5px", objectFit: "cover" }}
           /> */}
-          
+
         </div>
       </Grid>
     </Grid>
@@ -246,7 +270,7 @@ PopularPicks.defaultProps = {
       On This
       <br />
       Week.
-      <br/>
+      <br />
     </>
   ),
   description: (

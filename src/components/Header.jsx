@@ -1,20 +1,22 @@
 import React, { useState } from 'react';
-import { styles } from './style';
+import styles from './style';
 import LoginModal from '../../src/features/login/LoginModal'
 import { Menu as MenuIcon } from '@mui/icons-material';
-import { AppBar,
-         Container, 
-         Toolbar, 
-         IconButton, 
-         Typography, 
-         Box, 
-         Button, 
-         Menu, 
-         MenuItem, 
-         Avatar, 
-         Tooltip } from '@mui/material';
+import {
+  AppBar,
+  Container,
+  Toolbar,
+  IconButton,
+  Typography,
+  Box,
+  Button,
+  Menu,
+  MenuItem,
+  Avatar,
+  Tooltip
+} from '@mui/material';
 
-const pages = ['All Products', 'Categories', <LoginModal/>];
+const pages = ['All Products', 'Categories', <LoginModal />];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function Header() {
@@ -37,11 +39,11 @@ function Header() {
   };
 
   return (
-    <AppBar style={styles.appBar} 
-            position="static">
+    <AppBar style={styles.appBar}
+      position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          
+
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
@@ -79,7 +81,7 @@ function Header() {
               ))}
             </Menu>
           </Box>
-         
+
           <Typography
             variant="h5"
             noWrap
