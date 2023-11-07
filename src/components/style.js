@@ -1,22 +1,19 @@
-import { Paper, styled } from "@mui/material";
-
-
-
-//item
-export const Item = styled(Paper)(() => ({
-  backgroundColor: 'transparent',
-  textAlign: 'center',
-}));
-
-// Popular Picks
-export const greenBoxBg={
-  height: 'auto',
-  backgroundColor: '#39A848'
-};  
-
-export const popText={
-  color: 'white',
-  fontFamily: 'Poppins',
-  fontWeight: '600',
-  wordWrap: 'break-word'
-}
+const styles = {
+    dashboardContainer: {
+      display: 'flex',
+    },
+    sidebar: {
+      width: '250px', // Adjust the width of the sidebar as needed
+      backgroundColor: '#333', // Set the background color for the sidebar
+      color: 'white', // Set text color for the sidebar
+    },
+    dashboardContent: {
+      flex: 1,
+      padding: '20px', // Adjust padding as needed
+      backgroundColor: '#f0f0f0', // Set background color for content
+      overflowY: 'auto', // Add vertical scroll if content overflows
+    },
+  };
+  
+  export default styles;
+  

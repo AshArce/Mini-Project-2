@@ -13,11 +13,11 @@ export const routes = [
     element: <Login />,
   },
   {
-    path: "/admin/Dashboard",
+    path: "/admin/dashboard",
     element: <Dashboard />,
   },
   {
-    path: "/admin/Products",
+    path: "/admin/products",
     element: <Products />,
   },
 ]
