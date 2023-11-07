@@ -1,6 +1,7 @@
 import Login from "../features/login/Login";
 import Dashboard from "../features/admin/Dashboard";
 import LandingPage from "../features/customer/LandingPage";
+import Products from "../features/admin/Products";
 
 export const routes = [
   {
@@ -12,7 +13,11 @@ export const routes = [
     element: <Login />,
   },
   {
-    path: "/admin/Dashboard",
+    path: "/admin/dashboard",
     element: <Dashboard />,
+  },
+  {
+    path: "/admin/products",
+    element: <Products />,
   },
 ]

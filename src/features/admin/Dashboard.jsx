@@ -1,45 +1,40 @@
-import React from 'react'
-import { Grid, Paper } from '@mui/material'
-import AdminNavigations from './AdminNavigations'
 
 
-function Dashboard() {
+import React from 'react';
+import AdminNavigations from './AdminNavigations';
+import { styled } from '@mui/system'; // Updated import statement
+
+
+const Container = styled('div')`
+  display: flex;
+`;
+
+const Sidebar = styled('div')`
+  width: 250px; /* Adjust the width of the sidebar as needed */
+  background-color: #333; /* Set the background color for the sidebar */
+  color: white; /* Set text color for the sidebar */
+`;
+
+const Content = styled('div')`
+  flex: 1;
+  padding: 20px; /* Adjust padding as needed */
+  background-color: #f0f0f0; /* Set background color for content */
+  overflow-y: auto; /* Add vertical scroll if content overflows */
+`;
+
+const Dashboard = () => {
   return (
-    <Grid container 
-          justifyContent='center' 
-          alignItems='center' 
-          spacing={1} 
-          sx={{
-            height:'100vh',
-          }}>
-      
-     <Grid
-              item xs={3}
-              container
-              direction="column"
-              justifyContent="space-evenly  "
-              alignItems="stretch"
-              sx={{
-                backgroundColor:'#39A848',
-                height:'100vh'}}
-            >
-            <Grid>Admin Dashboard</Grid>
-            <AdminNavigations/>
-            <Grid>Logout</Grid>
-      </Grid>
-      <Grid item xs={9} 
-            sx={{
-                height: 'auto'
-                }}>
-                  <Paper sx={{height:'50px',
-                              backgroundColor: 'pink  '}}>
-                    testing</Paper>
-                  <Paper>testing2</Paper>
-                  <Paper>testing3</Paper>
-                  <Paper>testing4</Paper>
-      </Grid>
-    </Grid>
-  )
-}
+    <Container>
+      <Sidebar>
+        <AdminNavigations />
+      </Sidebar>
+      <Content>
+        <h1>Welcome to the Dashboard</h1>
+        <p>This is the main dashboard content.</p>
+        {/* Add other content and components here */}
+      </Content>
+    </Container>
+  );
+};
 
-export default Dashboard
+export default Dashboard;
