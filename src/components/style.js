@@ -59,15 +59,15 @@ const styles = {
     height: 108,
     alignItems: "start",
     maxWidth: 773,
-    marginLeft: -263,
+    marginLeft: 20,
     marginTop: 23,
-    zIndex: 1,
+    zIndex: 3,
   },
   description: {
     fontWeight: "bold",
     fontFamily: "Poppins",
     maxWidth: 773,
-    fontSize: "12px",
+    fontSize: "1.1rem",
     // color: theme.palette.light_green[900],
   },
   button: {
@@ -83,6 +83,7 @@ const styles = {
     fontSize: "10px",
     textAlign: "center",
     width: 101,
+    backgroundColor: "green",
   },
   //Images
   ladyShopping: {
@@ -94,7 +95,6 @@ const styles = {
   RegisterBoxVector: {
     display: "flex",
     bottom: "-40px",
-    alignItems: "end",
     position: "absolute",
     width: "300x",
     height: "250px",
