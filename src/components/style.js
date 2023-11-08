@@ -1,11 +1,3 @@
-// import { Paper, styled } from "@mui/material";
-
-// item
-// export const Item = styled(Paper)(() => ({
-//   backgroundColor: 'transparent',
-//   textAlign: 'center',
-// }));
-
 // Popular Picks
 
 const styles = {
@@ -20,6 +12,7 @@ const styles = {
   appBar: {
     backgroundColor: "transparent",
     color: "green",
+    boxShadow: "0",
   },
 
   greenBoxBg: {
@@ -100,6 +93,8 @@ const styles = {
     height: "250px",
     borderRadius: 50,
   },
+
+  //Footer
 };
 
 export default styles;
