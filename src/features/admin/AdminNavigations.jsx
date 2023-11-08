@@ -38,16 +38,25 @@ function AdminNavigations(props) {
       <Toolbar />
       <Divider />
       <List>
+        
         <ListItem disablePadding>
           <ListItemButton component={Link} to={'/admin/dashboard'}>
             <ListItemText primary={"Dashboard"} />
           </ListItemButton>
         </ListItem>
+
         <ListItem disablePadding>
         <ListItemButton component={Link} to={'/admin/products'}>
             <ListItemText primary={"Products"} />
           </ListItemButton>
         </ListItem>
+
+        <ListItem disablePadding>
+        <ListItemButton component={Link} to={'/admin/categories'}>
+            <ListItemText primary={"Categories"} />
+          </ListItemButton>
+        </ListItem>
+
       </List>
 
       <Divider />
