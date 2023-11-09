@@ -1,3 +1,5 @@
+import { styled } from "@mui/system";
+
 // Popular Picks
 
 const styles = {
@@ -93,8 +95,83 @@ const styles = {
     height: "250px",
     borderRadius: 50,
   },
-
-  //Footer
 };
-
 export default styles;
+
+//Footer
+export const Root = styled("div")(({ theme }) => ({
+  display: "flex",
+  flexDirection: "row",
+  alignItems: "flex-start",
+  justifyContent: "start",
+  margin: "0 11px",
+  width: "95%",
+  [theme.breakpoints.up("md")]: {
+    flexDirection: "column",
+    gap: "5px",
+    marginLeft: "0",
+    width: "100%",
+  },
+}));
+
+export const Column = styled("div")(({ theme }) => ({
+  display: "flex",
+  flexDirection: "column",
+  gap: "2.5px",
+  height: "auto",
+  alignItems: "flex-start",
+  justifyContent: "start",
+  width: "auto",
+  [theme.breakpoints.up("md")]: {
+    marginLeft: "0",
+    [theme.breakpoints.up("md")]: {
+      marginLeft: "123px",
+    },
+    [theme.breakpoints.up("lg")]: {
+      marginLeft: "99px",
+    },
+  },
+}));
+
+export const SupportColumn = styled("div")(({ theme }) => ({
+  marginLeft: "171px",
+  [theme.breakpoints.up("md")]: {
+    marginLeft: "0",
+    width: "100%",
+  },
+}));
+
+export const SubscribeColumn = styled("div")(({ theme }) => ({
+  marginLeft: "3px",
+  marginTop: "69px",
+  [theme.breakpoints.up("md")]: {
+    marginLeft: "0",
+    width: "100%",
+  },
+}));
+
+export const SocialIcons = styled("div")(({ theme }) => ({
+  display: "flex",
+  flexDirection: "row",
+  gap: "25px",
+  alignItems: "end",
+  justifyContent: "start",
+  marginLeft: "695px",
+  marginTop: "5px",
+  width: "auto",
+  [theme.breakpoints.up("md")]: {
+    marginLeft: "0",
+  },
+}));
+
+export const Line = styled("hr")(({ theme }) => ({
+  backgroundColor: theme.palette.primary.main,
+  height: "1px",
+  marginTop: "72px",
+  width: "100%",
+}));
+
+export const Copyright = styled("div")(({ theme }) => ({
+  marginLeft: "381px",
+  marginTop: "26px",
+}));
