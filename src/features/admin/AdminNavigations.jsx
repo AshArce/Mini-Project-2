@@ -94,7 +94,7 @@ function AdminNavigations(props) {
 
       <Box
         component="nav"
-        sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 }}}
+        sx={{ width: { xs: drawerWidth, sm: drawerWidth - 40 }, flexShrink: { sm: 0 }}}
         aria-label="mailbox folders"
       >
         <Drawer
