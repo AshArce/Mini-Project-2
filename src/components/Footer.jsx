@@ -1,13 +1,22 @@
 import React from "react";
 import { Button, Typography, Link, Grid } from "@mui/material";
-import * as style from './style'
+import * as styles from './style'
 
 
 
 const Footer = (props) => {
   return (
 
-    <Grid container spacing={2}>
+    <Grid
+      container
+      spacing={0}
+      sx={{
+        margin: 0,
+        p: 2,
+        backgroundColor: "#D5FFD0"
+      }}
+    >
+
       <Grid item
         xs={6}
         md={12}

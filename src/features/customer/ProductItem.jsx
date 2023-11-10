@@ -1,7 +1,6 @@
 import React from 'react'
 import Header from '../../components/Header'
 import { Button, Grid, Input, Paper, Typography } from '@mui/material'
-import { Input as BaseInput } from '@mui/base/Input';
 import { Box } from '@mui/system'
 
 function ProductItem() {
