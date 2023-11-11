@@ -4,12 +4,9 @@ import LoginModal from '../features/login/LoginModal.jsx'
 
 
 
-
-
-
-
 function NavigationBar() {
   return (
+
 
     <Grid container justifyContent='center' spacing={1} >
       <Grid item xs={3}>
@@ -35,6 +32,7 @@ function NavigationBar() {
 
       </Grid>
     </Grid>
+
 
   );
 }
