@@ -14,7 +14,7 @@ const PopularPicks = (props) => {
         <Grid item
           xs={6}>
           <Paper
-            elevation={3}
+            elevation={9}
             style={{
               backgroundColor: "#FFFFFF",
               padding: "9px",

@@ -11,10 +11,6 @@ body {
 #root {
   height: 100%;
 
-* {
-
-  border: 0.1px solid rgb(73, 0, 22);
-}
 
 :root {
   --base-font-size: 16px;

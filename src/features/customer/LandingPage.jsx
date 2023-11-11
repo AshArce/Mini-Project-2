@@ -6,21 +6,28 @@ import PopularPicks from '../../components/PopularPicks'
 import TopSelling from '../../components/TopSelling'
 import RegisterBox from '../../components/RegisterBox'
 import { Box } from '@mui/material'
+import Footer from '../../components/Footer'
 
 function LandingPage() {
   return (
-    
+
     <>
       <Header />
-      
-      <FeaturedProduct/>
-      <Box sx={{padding: '5vh',
-                backgroundColor: 'green'}} >
-      <PopularPicks/>
-      <TopSelling />
-      <RegisterBox />
-      </Box>
-    </> 
+
+      <FeaturedProduct />
+      <Box sx={{
+        boxShadow: '0',
+        padding: '10vh 7%',
+        backgroundImage: `url("/images/HeroVector.png")`,
+        backgroundSize: '100% 100%',
+        backgroundRepeat: 'no-repeat'
+      }} >
+        <PopularPicks />
+        <TopSelling />
+        <RegisterBox />
+      </Box >
+      <Footer />
+    </>
   )
 }
 

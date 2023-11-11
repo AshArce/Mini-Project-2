@@ -4,57 +4,71 @@ import { Paper, Typography, List, ListItem, ListItemText } from "@mui/material";
 const TopSelling = (props) => {
   return (
     <div >
-      <div style={{ display: "flex",
-                    flexDirection: "column", 
-                    alignItems: "center", 
-                    justifyContent: "space-between", 
-                    width: "100%" }}>
+      <div style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "space-between",
+        width: "100%"
+      }}>
 
-        <div style={{ display: "flex", 
-                      flexDirection: "column", 
-                      gap: "10px", 
-                      height: "100%", 
-                      alignItems: "start", 
-                      justifyContent: "start", 
-                      width: "100%" }}>
-                        
-          <Typography variant="h3" 
-                      style={{ fontWeight: "bold", 
-                               fontFamily: "Poppins", 
-                               color: "#FFFFFF",
-                               fontSize: '2rem'}}>
+        <div style={{
+          display: "flex",
+          flexDirection: "column",
+          gap: "10px",
+          height: "100%",
+          alignItems: "start",
+          justifyContent: "start",
+          width: "100%"
+        }}>
+
+          <Typography variant="h3"
+            style={{
+              fontWeight: "bold",
+              fontFamily: "Poppins",
+              color: "#FFFFFF",
+              fontSize: '2rem'
+            }}>
             {props?.salestext}
           </Typography>
-          
-          <Typography variant="h1" 
-                      style={{ fontWeight: "bold", 
-                               fontFamily: "Poppins", 
-                               color: "#FFFFFF", 
-                               maxWidth: "455px", 
-                               fontSize: "64px", 
-                               lineHeight: "80px" }}>
+
+          <Typography variant="h1"
+            style={{
+              fontWeight: "bold",
+              fontFamily: "Poppins",
+              color: "#FFFFFF",
+              maxWidth: "455px",
+              fontSize: "64px",
+              lineHeight: "80px"
+            }}>
             {props?.topsellingtext}
           </Typography>
 
-          <Typography variant="h6" 
-                      style={{ fontWeight: "bold", 
-                               fontFamily: "Poppins", 
-                               color: "#FFFFFF", 
-                               maxWidth: "455px" }}>
+          <Typography variant="h6"
+            style={{
+              fontWeight: "bold",
+              fontFamily: "Poppins",
+              color: "#FFFFFF",
+              maxWidth: "455px"
+            }}>
             {props?.preparetext}
           </Typography>
 
-          <div style={{ display: "flex", 
-                        flexDirection: "row", 
-                        gap: "2.5", 
-                        alignItems: "start", 
-                        justifyContent: "start", 
-                        width: "auto" }}>
+          <div style={{
+            display: "flex",
+            flexDirection: "row",
+            gap: "2.5",
+            alignItems: "start",
+            justifyContent: "start",
+            width: "auto"
+          }}>
 
-            <Typography variant="h6" 
-                        style={{ fontWeight: "bold", 
-                                 fontFamily: "Poppins", 
-                                 color: "#FFFFFF" }}>
+            <Typography variant="h6"
+              style={{
+                fontWeight: "bold",
+                fontFamily: "Poppins",
+                color: "#FFFFFF"
+              }}>
               {props?.seealltext}
             </Typography>
 
@@ -62,91 +76,101 @@ const TopSelling = (props) => {
 
           </div>
         </div>
-        
-        <List style={{ display: "flex", 
-                       flexDirection: "column", 
-                       width: "100%", 
-                       orientation: "vertical" }}>
-          <ListItem>  
-          <Paper
-          elevation={3}
-          style={{
-            backgroundColor: "#FFFFFF",
-            padding: "9px",
-            borderRadius: "15px",
-            height: "100px",
-            width:'250px',
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "start",
-            justifyContent: "flex-end",
-          }}
-        >
-          <div style={{
-             display: "flex", 
-             flexDirection: "column", 
-             alignItems: "start", 
-             justifyContent: "start"
-             }}>
 
-            <Typography 
-            variant="p" 
-            style={{ fontWeight: "bold", 
-                     fontFamily: "Poppins", 
-                     color: "#000000", }}>
-              {props?.nameitemtext}
-            </Typography>
-            <Typography 
-            variant="h6" 
-            style={{ fontWeight: "bold", 
-                     fontFamily: "Poppins", 
-                     color: "#000000", }}>
-              {props?.pricecounter}
-            </Typography>
-            
-          </div>
-        </Paper>
+        <List style={{
+          display: "flex",
+          flexDirection: "column",
+          width: "100%",
+          orientation: "vertical"
+        }}>
+          <ListItem>
+            <Paper
+              elevation={3}
+              style={{
+                backgroundColor: "#FFFFFF",
+                padding: "9px",
+                borderRadius: "15px",
+                height: "100px",
+                width: '250px',
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "start",
+                justifyContent: "flex-end",
+              }}
+            >
+              <div style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "start",
+                justifyContent: "start"
+              }}>
+
+                <Typography
+                  variant="p"
+                  style={{
+                    fontWeight: "bold",
+                    fontFamily: "Poppins",
+                    color: "#000000",
+                  }}>
+                  {props?.nameitemtext}
+                </Typography>
+                <Typography
+                  variant="h6"
+                  style={{
+                    fontWeight: "bold",
+                    fontFamily: "Poppins",
+                    color: "#000000",
+                  }}>
+                  {props?.pricecounter}
+                </Typography>
+
+              </div>
+            </Paper>
           </ListItem>
 
           <ListItem>
-          <Paper
-          elevation={3}
-          style={{
-            backgroundColor: "#FFFFFF",
-            padding: "9px",
-            borderRadius: "15px",
-            height: "100px",
-            width:'250px',
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "start",
-            justifyContent: "flex-end",
-          }}
-        >
-          <div style={{
-             display: "flex", 
-             flexDirection: "column", 
-             alignItems: "start", 
-             justifyContent: "start"
-             }}>
+            <Paper
+              elevation={3}
+              style={{
+                backgroundColor: "#FFFFFF",
+                padding: "9px",
+                borderRadius: "15px",
+                height: "100px",
+                width: '250px',
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "start",
+                justifyContent: "flex-end",
+              }}
+            >
+              <div style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "start",
+                justifyContent: "start"
+              }}>
 
-            <Typography 
-            variant="p" 
-            style={{ fontWeight: "bold", 
-                     fontFamily: "Poppins", 
-                     color: "#000000", }}>
-              {props?.nameitemtext}
-            </Typography>
-            <Typography 
-            variant="h6" 
-            style={{ fontWeight: "bold", 
-                     fontFamily: "Poppins", 
-                     color: "#000000", }}>
-              {props?.pricecounter}
-            </Typography>
-            
-          </div>
-        </Paper>
+                <Typography
+                  variant="p"
+                  style={{
+                    fontWeight: "bold",
+                    fontFamily: "Poppins",
+                    color: "#000000",
+                  }}>
+                  {props?.nameitemtext}
+                </Typography>
+                <Typography
+                  variant="h6"
+                  style={{
+                    fontWeight: "bold",
+                    fontFamily: "Poppins",
+                    color: "#000000",
+                  }}>
+                  {props?.pricecounter}
+                </Typography>
+
+              </div>
+            </Paper>
           </ListItem>
         </List>
       </div>

@@ -4,36 +4,37 @@ import styles from './style';
 
 const RegisterBox = (props) => {
   return (
-    <Box style={styles.root}>
-      <Box style={styles.container}>
+
+    <Box style={styles.container}>
+
+      <Box>
         <Paper style={styles.imageContainer}>
+
           <img
-            style={styles.image}
+            style={styles.ladyShopping}
+            src={'./images/ladyShopping.png'}
+            alt="rectangleFortySeven"
+          />
+          <img
+            style={styles.RegisterBoxVector}
             src="./images/RegisterBoxVector.svg"
             alt="rectangleSeventyOne"
           />
         </Paper>
         <Box style={styles.textContainer}>
-          {props.description && (
-            <Typography style={styles.description}>
-              {props.description}
-            </Typography>
-          )}
-          {props.buttontext && (
-            <Button style={styles.button} variant="contained">
-              {props.buttontext}
-            </Button>
-          )}
+          <Typography style={styles.description}>
+            {props.description}
+          </Typography>
+
+
+          <Button style={styles.button} variant="contained">
+            Create now
+          </Button>
+
         </Box>
       </Box>
-      {props.rectanglefortyseven && (
-        <img
-          style={styles.rectangleImage}
-          src={props.rectanglefortyseven}
-          alt="rectangleFortySeven"
-        />
-      )}
     </Box>
+
   );
 };
 
