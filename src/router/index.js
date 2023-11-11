@@ -4,7 +4,6 @@ import LandingPage from "../features/customer/LandingPage";
 import CategoriesPage from "../features/customer/CategoriesPage";
 import AllProducts from "../features/customer/AllProducts";
 import ProductItem from "../features/customer/ProductItem";
-
 export const routes = [
   {
     path: "/",

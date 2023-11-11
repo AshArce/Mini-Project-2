@@ -1,3 +1,4 @@
+import { Grid } from "@mui/material";
 import { styled } from "@mui/system";
 
 // Popular Picks
@@ -14,7 +15,7 @@ const styles = {
   appBar: {
     backgroundColor: "transparent",
     color: "green",
-    boxShadow: "0",
+    boxShadow: "none",
   },
 
   greenBoxBg: {
@@ -131,47 +132,4 @@ export const Column = styled("div")(({ theme }) => ({
       marginLeft: "99px",
     },
   },
-}));
-
-export const SupportColumn = styled("div")(({ theme }) => ({
-  marginLeft: "171px",
-  [theme.breakpoints.up("md")]: {
-    marginLeft: "0",
-    width: "100%",
-  },
-}));
-
-export const SubscribeColumn = styled("div")(({ theme }) => ({
-  marginLeft: "3px",
-  marginTop: "69px",
-  [theme.breakpoints.up("md")]: {
-    marginLeft: "0",
-    width: "100%",
-  },
-}));
-
-export const SocialIcons = styled("div")(({ theme }) => ({
-  display: "flex",
-  flexDirection: "row",
-  gap: "25px",
-  alignItems: "end",
-  justifyContent: "start",
-  marginLeft: "695px",
-  marginTop: "5px",
-  width: "auto",
-  [theme.breakpoints.up("md")]: {
-    marginLeft: "0",
-  },
-}));
-
-export const Line = styled("hr")(({ theme }) => ({
-  backgroundColor: theme.palette.primary.main,
-  height: "1px",
-  marginTop: "72px",
-  width: "100%",
-}));
-
-export const Copyright = styled("div")(({ theme }) => ({
-  marginLeft: "381px",
-  marginTop: "26px",
 }));
