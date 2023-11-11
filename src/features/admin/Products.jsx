@@ -17,6 +17,7 @@ import { Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 import EditProduct from './EditProduct';
 import AddProductModal from './AddProductModal';
+import Categories from './Categories'
 
 const Container = styled('div')`
   display: flex;
@@ -38,6 +39,8 @@ const Products = () => {
       { id: 1, name: 'Product A', status: 'Active', date: '2023-11-08', image: 'product-image-1.jpg' },
       { id: 2, name: 'Product B', status: 'Inactive', date: '2023-11-09', image: 'product-image-2.jpg' },
     ]);
+
+    <Categories products={products} />
   
     const handleSearchChange = (event) => {
       setSearchQuery(event.target.value);

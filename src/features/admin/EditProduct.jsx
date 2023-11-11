@@ -7,6 +7,7 @@ import TextField from '@mui/material/TextField';
 import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
 import Button from '@mui/material/Button';
+import Paper from '@mui/material/Paper';
 
 
 
@@ -17,10 +18,12 @@ const StyledContainer = styled('div')`
   margin-right: 60px;
 `;
 
-const ContentContainer = styled('div')`
+
+const ContainerWrapper = styled('div')`
   display: flex;
   flex-direction: row;
   flex: 1;
+  margin-top: 20px; /* Adjusted margin for better spacing */
 `;
 
 const LeftContainer = styled('div')`
@@ -39,6 +42,19 @@ const RightContainer = styled('div')`
   padding: 10px;
 `;
 
+const ImagePreviewContainer = styled('div')`
+  margin-top: 16px;
+`;
+
+const ImagePreview = styled('img')`
+  max-width: 100%;
+  max-height: 80px; /* Set the max height to 80px */
+`;
+
+const DeleteButton = styled(Button)`
+  margin-top: 8px;
+`;
+
 const InputField = styled(TextField)`
   && {
     margin-bottom: 16px; /* Adjust the margin-bottom as needed */
@@ -46,20 +62,13 @@ const InputField = styled(TextField)`
 `;
 
 const ActionButtons = styled('div')`
+  margin-top: auto; /* Push to the bottom */
   display: flex;
   justify-content: flex-end;
-  margin-top: 16px;
+  padding: 16px; /* Add padding for better spacing */
 `;
 
-const handleSave = () => {
-  // Add your save logic here
-  console.log('Save clicked');
-};
 
-const handleCancel = () => {
-  // Add your cancel logic here
-  console.log('Cancel clicked');
-};
 
 
 function EditProduct() {
@@ -77,32 +86,55 @@ function EditProduct() {
       setSelectedImage(file);
     };
 
+    const handleDeleteImage = () => {
+      setSelectedImage(null);
+    };
+  
+    
+    const handleSave = () => {
+      // Add your save logic here
+      console.log('Save clicked');
+    };
+
+    const handleCancel = () => {
+      // Add your cancel logic here
+      console.log('Cancel clicked');
+    };
+
     return (
       <StyledContainer>
       <AdminNavigations />
-      <ContentContainer>
-      <LeftContainer>
-        {/* Image upload section */}
-        <h2>Edit Product</h2>
-        <label htmlFor="image-upload">Select Image:</label>
-        <input
-          type="file"
-          id="image-upload"
-          accept="image/*"
-          onChange={handleImageChange}
-        />
-        {/* Display image preview if an image is selected */}
-        {selectedImage && (
-          <div>
-            <h3>Image Preview:</h3>
-            <img
-              src={URL.createObjectURL(selectedImage)}
-              alt="Selected Preview"
-              style={{ maxWidth: '100%' }}
-            />
-          </div>
-          )}
-      </LeftContainer>
+      <ContainerWrapper>
+        <LeftContainer>
+          {/* Image upload section */}
+          <h2>Edit Product</h2>
+          <label htmlFor="image-upload">Select Image:</label>
+          <input
+            type="file"
+            id="image-upload"
+            accept="image/*"
+            onChange={handleImageChange}
+          />
+          {/* Display image preview if an image is selected */}
+          {selectedImage && (
+            <ImagePreviewContainer>
+              <Paper elevation={3} variant="outlined" sx={{ p: 2, mb: 2 }}>
+                <h3>Image Preview:</h3>
+                <ImagePreview
+                  src={URL.createObjectURL(selectedImage)}
+                  alt="Selected Preview"
+                />
+                <DeleteButton
+                  variant="outlined"
+                  color="secondary"
+                  onClick={handleDeleteImage}
+                >
+                  Delete
+                </DeleteButton>
+              </Paper>
+            </ImagePreviewContainer>
+            )}
+        </LeftContainer>
       <RightContainer>
         {/* Product details section */}
         <h2>Product Details</h2>
@@ -151,16 +183,17 @@ function EditProduct() {
           onChange={(e) => setDescription(e.target.value)}
         />
       </RightContainer>
-      </ContentContainer>
-      {/* Action buttons outside RightContainer */}
+      
+      
       <ActionButtons>
         <Button variant="contained" color="primary" onClick={handleSave}>
           Save
         </Button>
-        <Button variant="outlined" color="secondary" onClick={handleCancel} sx={{ marginLeft: 8 }}>
+        <Button variant="outlined" color="secondary" onClick={handleCancel} sx={{ marginLeft: 2 }}>
           Cancel
         </Button>
       </ActionButtons>
+    </ContainerWrapper>
     </StyledContainer>
     );
 }

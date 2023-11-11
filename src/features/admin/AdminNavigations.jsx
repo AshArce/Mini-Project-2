@@ -17,7 +17,7 @@ import { styled } from '@mui/system';
 
 
 
-const drawerWidth = 240;
+const drawerWidth = 200;
 const StyledAppBar = styled('div')`
   display: block;
 `;
@@ -67,7 +67,7 @@ function AdminNavigations(props) {
 
   return (
     <Box sx={{ display: 'flex',
-               margin: 0 }}>
+               margin: 0, }}>
       <StyledAppBar
           position="fixed"
           sx={{ 
@@ -94,10 +94,11 @@ function AdminNavigations(props) {
 
       <Box
         component="nav"
-        sx={{ width: { xs: drawerWidth, sm: drawerWidth - 40 }, flexShrink: { sm: 0 }}}
+        sx={{ width: { xs: '100%', sm: drawerWidth - 80 }, 
+              flexShrink: { sm: 0 }}}
         aria-label="mailbox folders"
       >
-        <Drawer
+        <Drawer 
           container={container}
           variant="temporary"
           open={mobileOpen}
@@ -107,16 +108,22 @@ function AdminNavigations(props) {
       }}
       sx={{
         display: { xs: 'block', sm: 'none' },
-        '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+        '& .MuiDrawer-paper': { 
+          boxSizing: 'border-box', 
+          width: drawerWidth },
       }}
     >
       {drawer}
     </Drawer>
-    <Drawer
+    <Drawer 
       variant="permanent"
-      sx={{
+      sx={{ 
         display: { xs: 'none', sm: 'block' },
-        '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+        '& .MuiDrawer-paper': { 
+          boxSizing: 'border-box', 
+          width: drawerWidth, 
+          backgroundColor: '#44C9F2' },
+       
       }}
       open
     >
