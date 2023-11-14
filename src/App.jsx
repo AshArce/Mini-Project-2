@@ -1,13 +1,11 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import "./App.css";
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { routes } from './router/index';
-import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
-
-// Create a Material-UI theme
-const theme = createTheme();
+import theme from './features/Styles/theme';
 
 const router = createBrowserRouter(routes)
 

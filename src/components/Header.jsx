@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './style';
+import styles from '../features/Styles/style';
 import LoginModal from '../../src/features/login/LoginModal'
 import { Menu as MenuIcon, SearchOutlined } from '@mui/icons-material';
 import {
@@ -9,7 +9,6 @@ import {
   IconButton,
   Typography,
   Box,
-  Button,
   Menu,
   MenuItem,
   Tooltip,
@@ -18,11 +17,11 @@ import {
 import { styled, alpha } from '@mui/system';
 
 const pages = ['All Products', 'Categories', <LoginModal />];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
-  borderRadius: theme.shape.borderRadius,
+  borderRadius: "0px",
   backgroundColor: alpha(theme.palette.common.white, 0.15),
   '&:hover': {
     backgroundColor: alpha(theme.palette.common.white, 0.25),
@@ -52,7 +51,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     // vertical padding + font size from searchIcon
     paddingLeft: `calc(1em + ${theme.spacing(4)})`,
     transition: theme.transitions.create('width'),
-    width: '20px',
+    width: '50px',
     [theme.breakpoints.up('sm')]: {
       width: '20px',
       '&:focus': {
@@ -63,8 +62,9 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }));
 
 function Header() {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+  const [anchorElNav, setAnchorElNav] = useState(null);
+  const [anchorElUser, setAnchorElUser] = useState(null);
+
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -77,14 +77,10 @@ function Header() {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
-
   return (
     <AppBar style={styles.appBar}
       position="static">
-      <Container maxWidth="xl">
+      <Container fullWidth>
         <Toolbar disableGutters>
 
 
@@ -119,7 +115,7 @@ function Header() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  {page === 'Login' ? <LoginModal /> : <Typography textAlign="center">{page}</Typography>}
                 </MenuItem>
               ))}
             </Menu>
@@ -135,27 +131,15 @@ function Header() {
               mr: 2,
               display: { xs: 'flex', md: 'none' },
               flexGrow: 1,
-              fontFamily: 'Poppins',
               fontWeight: 700,
               letterSpacing: '0.1rem',
-              color: 'inherit',
+              color: '#6d6d6d',
               textDecoration: 'none',
 
             }}
           >
             kartCheck
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                {page}
-              </Button>
-            ))}
-          </Box>
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Search">
