@@ -1,10 +1,10 @@
 import React from "react";
-import { Paper, Typography, List, ListItem, ListItemText } from "@mui/material";
+import { Paper, Typography, List, ListItem, Grid } from "@mui/material";
 
 const TopSelling = (props) => {
   return (
-    <div >
-      <div style={{
+    <Grid >
+      <Grid style={{
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -12,7 +12,7 @@ const TopSelling = (props) => {
         width: "100%"
       }}>
 
-        <div style={{
+        <Grid style={{
           display: "flex",
           flexDirection: "column",
           gap: "10px",
@@ -54,7 +54,7 @@ const TopSelling = (props) => {
             {props?.preparetext}
           </Typography>
 
-          <div style={{
+          <Grid style={{
             display: "flex",
             flexDirection: "row",
             gap: "2.5",
@@ -74,8 +74,8 @@ const TopSelling = (props) => {
 
             <img src="images/img_rightarrow1.png" alt="rightarrowOne_One" style={{ height: "5px", width: "5px", objectFit: "cover" }} />
 
-          </div>
-        </div>
+          </Grid>
+        </Grid>
 
         <List style={{
           display: "flex",
@@ -83,7 +83,10 @@ const TopSelling = (props) => {
           width: "100%",
           orientation: "vertical"
         }}>
-          <ListItem>
+          <ListItem
+            style={{
+              justifyContent: 'center'
+            }}>
             <Paper
               elevation={3}
               style={{
@@ -95,10 +98,9 @@ const TopSelling = (props) => {
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "start",
-                justifyContent: "flex-end",
               }}
             >
-              <div style={{
+              <Grid style={{
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "start",
@@ -124,11 +126,13 @@ const TopSelling = (props) => {
                   {props?.pricecounter}
                 </Typography>
 
-              </div>
+              </Grid>
             </Paper>
           </ListItem>
 
-          <ListItem>
+          <ListItem style={{
+            justifyContent: 'center'
+          }}>
             <Paper
               elevation={3}
               style={{
@@ -143,7 +147,7 @@ const TopSelling = (props) => {
                 justifyContent: "flex-end",
               }}
             >
-              <div style={{
+              <Grid style={{
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "start",
@@ -169,12 +173,12 @@ const TopSelling = (props) => {
                   {props?.pricecounter}
                 </Typography>
 
-              </div>
+              </Grid>
             </Paper>
           </ListItem>
         </List>
-      </div>
-    </div>
+      </Grid>
+    </Grid>
   );
 };
 

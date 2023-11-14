@@ -1,48 +1,53 @@
 import React from 'react'
 import { Box, Button, Grid, Typography } from '@mui/material'
-import * as styles from './style.js'
+import styles from '../features/Styles/featuredstyle'
 
 function FeaturedProduct() {
   return (
 
     <Grid justifyContent='center' alignContent='center' container sx={{
 
-      height: '95vh',
+      height: '75vh',
       margin: '0'
     }}>
-      <Grid item xs={7}>
+      <Grid item xs={8}>
         <Box sx={{
-          padding: '0 15%'
+          padding: '0 10%'
         }}>
-          <Typography variant='h5' sx={{
-            fontWeight: '700'
-          }}>
+          <Typography variant='h1'>
             FEATURED PRODUCT
           </Typography>
 
-          <Typography sx={{
-            fontWeight: '300',
-            padding: '10px 0px',
-            fontSize: '0.7rem'
+          <Typography variant='p' sx={{
+
           }}>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum aperiam nam ipsa optio dolorem consequatur temporibus obcaecati, corrupti odio molestias.
+            Elevate your style with the iconic Jordan 1 Pine Green Low. Classic design meets comfort for a timeless fashion statement.
           </Typography>
           <Typography>
             Price: $$$
           </Typography>
-          <Grid container>
-            <Grid item xs={6}>
-              <Button>read more</Button>
+          <Grid container spacing={0}>
+            <Grid item sm={12} md={6} >
+              <Button
+                style={styles.fpButton}
+              >
+                Add to Kart
+              </Button>
             </Grid>
-            <Grid item xs={6}>
-              <Button>read more</Button>
+            <Grid item sm={12} md={6}>
+              <Button
+                style={styles.fpButton}
+
+              >
+                read more
+              </Button>
             </Grid>
 
           </Grid>
         </Box>
       </Grid>
-      <Grid item xs={5}>
-        <img src='#'></img>
+      <Grid item xs={4}>
+        <img style={styles.fpItem} src="./images/featureditem1.png"></img>
       </Grid>
     </Grid>
 

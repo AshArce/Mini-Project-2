@@ -5,7 +5,7 @@ import FeaturedProduct from '../../components/FeaturedProduct'
 import PopularPicks from '../../components/PopularPicks'
 import TopSelling from '../../components/TopSelling'
 import RegisterBox from '../../components/RegisterBox'
-import { Box } from '@mui/material'
+import { Box, List, ListItem } from '@mui/material'
 import Footer from '../../components/Footer'
 
 function LandingPage() {
@@ -15,17 +15,29 @@ function LandingPage() {
       <Header />
 
       <FeaturedProduct />
-      <Box sx={{
-        boxShadow: '0',
-        padding: '10vh 7%',
-        backgroundImage: `url("/images/HeroVector.png")`,
-        backgroundSize: '100% 100%',
-        backgroundRepeat: 'no-repeat'
-      }} >
-        <PopularPicks />
-        <TopSelling />
-        <RegisterBox />
-      </Box >
+      <img
+        src="public/images/HeroVector.png"
+        alt=""
+        style={{
+          position: 'absolute',
+          boxShadow: '0',
+          padding: '',
+          backgroundSize: '100% 100%',
+          backgroundRepeat: 'no-repeat',
+        }} />
+
+      <List>
+        <ListItem>
+          <PopularPicks />
+        </ListItem>
+        <ListItem>
+          <TopSelling />
+        </ListItem>
+        <ListItem>
+          <RegisterBox />
+        </ListItem>
+
+      </List>
       <Footer />
     </>
   )

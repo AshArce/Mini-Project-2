@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Button, Typography, Paper } from "@mui/material";
-import styles from './style';
+import styles from '../features/Styles/style';
 
 const RegisterBox = (props) => {
   return (

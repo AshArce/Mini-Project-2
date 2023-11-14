@@ -1,12 +1,8 @@
-import { Grid } from "@mui/material";
-import { styled } from "@mui/system";
-
 // Popular Picks
 
 const styles = {
   popText: {
     color: "white",
-    fontFamily: "Poppins",
     fontWeight: "600",
     wordWrap: "break-word",
   },
@@ -18,14 +14,9 @@ const styles = {
     boxShadow: "none",
   },
 
-  greenBoxBg: {
-    height: "auto",
-    backgroundColor: "#39A848",
-  },
-
   container: {
     position: "relative",
-    // backgroundColor: 'theme.palette.common.white',
+    // backgroundColor: "theme.palette.common.white",
     display: "flex",
     height: 250,
     width: 300,
