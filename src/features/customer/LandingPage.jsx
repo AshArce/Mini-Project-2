@@ -24,7 +24,7 @@ function LandingPage() {
           boxShadow: '0',
           padding: '0',
           width: "100%",
-          height: "230vh",
+          height: "250vh",
           zIndex: '0'
         }} />
 

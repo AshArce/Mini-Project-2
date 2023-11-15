@@ -1,12 +1,6 @@
 // Popular Picks
 
 const styles = {
-  popText: {
-    color: "white",
-    fontWeight: "600",
-    wordWrap: "break-word",
-  },
-
   //App Bar
   appBar: {
     backgroundColor: "transparent",

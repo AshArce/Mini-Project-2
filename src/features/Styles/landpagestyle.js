@@ -35,12 +35,6 @@ const styles = {
     fontFamily: "Poppins",
     color: "#FFFFFF",
   },
-  "@media (max-width: 600px)": {
-    fpButton: {
-      padding: "2% 50%", // Adjusted padding for smaller screens
-      color: "#a37d68",
-    },
-  },
 };
 
 export default styles;

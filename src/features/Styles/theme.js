@@ -3,34 +3,53 @@ import { createTheme } from "@mui/material/styles";
 const theme = createTheme({
   breakpoints: {
     values: {
-      xs: 0, // custom breakpoint for extra-small screens
-      sm: 425, // custom breakpoint for small screens
-      md: 768, // custom breakpoint for medium screens
-      lg: 1280, // custom breakpoint for large screens
-      xl: 1920, // custom breakpoint for extra-large screens
+      xs: 0,
+      sm: 480,
+      md: 768,
+      lg: 1024,
+      xl: 1366,
+    },
+  },
+  palette: {
+    mode: "light",
+    primary: {
+      main: "#1e7f0a",
+    },
+    secondary: {
+      main: "#f50057",
     },
   },
   typography: {
-    fontFamily: "Roboto, sans-serif",
+    fontFamily: "Poppins",
+    fontSize: 14,
+    fontWeightLight: 300,
+    fontWeightRegular: 400,
+    fontWeightBold: 700,
     h1: {
       fontSize: "2rem",
       fontWeight: 700,
+      lineHeight: 1,
     },
     h2: {
-      fontSize: "1.5rem",
-      fontWeight: 400,
+      fontSize: "1.7rem",
+      fontWeight: 500,
+      lineHeight: 1,
     },
-    h3: {},
-    h4: {},
-    h5: {},
-    h6: {},
-    p: {
-      fontSize: "0.8rem",
-      fontWeight: "600",
-    },
-
     button: {
-      textTransform: "none",
+      fontSize: "1rem",
+      lineHeight: 1.5,
+      fontWeight: 600,
+    },
+    h3: {
+      fontSize: "1.5rem",
+    },
+    h4: {
+      fontSize: "1.4rem",
+    },
+    body2: {
+      fontSize: "1rem",
+      fontWeight: 400,
+      lineHeight: 1,
     },
   },
   components: {
