@@ -21,7 +21,7 @@ function LandingPage() {
         style={{
           position: 'absolute',
           boxShadow: '0',
-          padding: '',
+          padding: '0',
           backgroundSize: '100% 100%',
           backgroundRepeat: 'no-repeat',
         }} />
