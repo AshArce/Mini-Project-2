@@ -5,7 +5,7 @@ import FeaturedProduct from '../../components/FeaturedProduct'
 import PopularPicks from '../../components/PopularPicks'
 import TopSelling from '../../components/TopSelling'
 import RegisterBox from '../../components/RegisterBox'
-import { Box, List, ListItem } from '@mui/material'
+import { List, ListItem } from '@mui/material'
 import Footer from '../../components/Footer'
 
 function LandingPage() {
@@ -16,14 +16,16 @@ function LandingPage() {
 
       <FeaturedProduct />
       <img
-        src="public/images/HeroVector.png"
+        src="/images/HeroVector.png"
         alt=""
         style={{
+          objectFit: 'cover',
           position: 'absolute',
           boxShadow: '0',
           padding: '0',
-          backgroundSize: '100% 100%',
-          backgroundRepeat: 'no-repeat',
+          width: "100%",
+          height: "230vh",
+          zIndex: '0'
         }} />
 
       <List>
@@ -38,7 +40,7 @@ function LandingPage() {
         </ListItem>
 
       </List>
-      <Footer />
+      <Footer style={{ zIndex: '1' }} />
     </>
   )
 }

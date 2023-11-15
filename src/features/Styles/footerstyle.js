@@ -1,8 +1,10 @@
 const styles = {
   FooterRoot: {
+    position: "relative",
     margin: 0,
     p: 2,
     backgroundColor: "#D5FFD0",
+    zIndex: 1,
   },
   FooterListItem: {
     display: "flex",

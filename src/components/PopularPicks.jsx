@@ -1,12 +1,14 @@
 import React from "react";
-import { Grid, Paper, Typography } from "@mui/material";
+import { Grid, Link, Paper, Typography } from "@mui/material";
+import styles from '../features/Styles/landpagestyle';
 
 const PopularPicks = (props) => {
   return (
 
     <Grid container
       direction={"column-reverse"}
-      spacing={1}>
+      spacing={1}
+      style={styles.PpRoot}>
       <Grid container
         direction={'row'}
         item xs={6}
@@ -15,17 +17,7 @@ const PopularPicks = (props) => {
           xs={6}>
           <Paper
             elevation={9}
-            style={{
-              backgroundColor: "#FFFFFF",
-              padding: "9px",
-              borderRadius: "15px",
-              height: "100px",
-              width: '100%',
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "start",
-              justifyContent: "flex-end",
-            }}
+            style={styles.PpItemPaper}
           >
             <div style={{
               display: "flex",
@@ -35,21 +27,13 @@ const PopularPicks = (props) => {
             }}>
 
               <Typography variant="p"
-                style={{
-                  fontWeight: "bold",
-                  fontFamily: "Poppins",
-                  color: "#000000",
-                }}>
+                style={styles.PpTextP}>
 
                 {props?.itemname}
               </Typography>
               <Typography
                 variant="h6"
-                style={{
-                  fontWeight: "bold",
-                  fontFamily: "Poppins",
-                  color: "#000000",
-                }}>
+                style={styles.PpTextP}>
                 {props?.itempcounter}
               </Typography>
 
@@ -59,17 +43,7 @@ const PopularPicks = (props) => {
         <Grid item xs={6}>
           <Paper
             elevation={3}
-            style={{
-              backgroundColor: "#FFFFFF",
-              padding: "9px",
-              borderRadius: "15px",
-              height: "100px",
-              width: '100%',
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "start",
-              justifyContent: "flex-end",
-            }}
+            style={styles.PpItemPaper}
           >
             <div style={{
               display: "flex",
@@ -80,20 +54,12 @@ const PopularPicks = (props) => {
 
               <Typography
                 variant="p"
-                style={{
-                  fontWeight: "bold",
-                  fontFamily: "Poppins",
-                  color: "#000000",
-                }}>
+                style={styles.PpTextP}>
                 {props?.itemname}
               </Typography>
               <Typography
                 variant="h6"
-                style={{
-                  fontWeight: "bold",
-                  fontFamily: "Poppins",
-                  color: "#000000",
-                }}>
+                style={styles.PpTextP}>
                 {props?.itempcounter}
               </Typography>
 
@@ -103,17 +69,7 @@ const PopularPicks = (props) => {
         <Grid item xs={6}>
           <Paper
             elevation={3}
-            style={{
-              backgroundColor: "#FFFFFF",
-              padding: "9px",
-              borderRadius: "15px",
-              height: "100px",
-              width: '100%',
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "start",
-              justifyContent: "flex-end",
-            }}
+            style={styles.PpItemPaper}
           >
             <div style={{
               display: "flex",
@@ -124,20 +80,12 @@ const PopularPicks = (props) => {
 
               <Typography
                 variant="p"
-                style={{
-                  fontWeight: "bold",
-                  fontFamily: "Poppins",
-                  color: "#000000",
-                }}>
+                style={styles.PpTextP}>
                 {props?.itemname}
               </Typography>
               <Typography
                 variant="h6"
-                style={{
-                  fontWeight: "bold",
-                  fontFamily: "Poppins",
-                  color: "#000000",
-                }}>
+                style={styles.PpTextP}>
                 {props?.itempcounter}
               </Typography>
 
@@ -146,17 +94,7 @@ const PopularPicks = (props) => {
         </Grid>
         <Grid item xs={6}>
           <Paper elevation={3}
-            style={{
-              backgroundColor: "#FFFFFF",
-              padding: "9px",
-              borderRadius: "15px",
-              height: "100px",
-              width: '100%',
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "start",
-              justifyContent: "flex-end",
-            }}
+            style={styles.PpItemPaper}
           >
             <div style={{
               display: "flex",
@@ -167,20 +105,12 @@ const PopularPicks = (props) => {
 
               <Typography
                 variant="p"
-                style={{
-                  fontWeight: "bold",
-                  fontFamily: "Poppins",
-                  color: "#000000",
-                }}>
+                style={styles.PpTextP}>
                 {props?.itemname}
               </Typography>
               <Typography
                 variant="h6"
-                style={{
-                  fontWeight: "bold",
-                  fontFamily: "Poppins",
-                  color: "#000000",
-                }}>
+                style={styles.PpTextP}>
                 {props?.itempcounter}
               </Typography>
 
@@ -196,7 +126,8 @@ const PopularPicks = (props) => {
             fontWeight: "bold",
             fontFamily: "Poppins",
             color: "#FFFFFF",
-            fontSize: '2rem'
+            fontSize: '2rem',
+            padding: '1% 0'
           }}>
           {props?.popularitem}
         </Typography>
@@ -208,9 +139,9 @@ const PopularPicks = (props) => {
             color: "#FFFFFF",
             maxWidth: "455px",
             fontSize: "3rem",
-            lineHeight: "40px"
+            lineHeight: "40px",
+            padding: '5% 0'
           }}>
-
           {props?.hottrendingon}
         </Typography>
 
@@ -231,16 +162,11 @@ const PopularPicks = (props) => {
           alignItems: "start",
           justifyContent: "start"
         }}>
-          <Typography
-            variant="h6"
-            style={{
-              fontWeight: "bold",
-              fontFamily: "Poppins",
-              color: "#FFFFFF"
-            }}>
-            {props?.seeall}
-          </Typography>
-
+          <Link src="#">
+            <Typography variant="h6" style={styles.PpSeeAll}>
+              {props?.seeall}
+            </Typography>
+          </Link>
           {/* <img
             src="images/img_rightarrow1.png"
             alt="rightarrowOne"

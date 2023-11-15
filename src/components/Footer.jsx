@@ -2,6 +2,7 @@ import React from "react";
 import { Button, Typography, Link, Grid, Box, List, ListItem, TextField } from "@mui/material";
 // import * as styles from './style'
 import styles from "../features/Styles/footerstyle";
+import { Container } from "@mui/system";
 
 
 
@@ -150,7 +151,9 @@ const Footer = (props) => {
         {props?.copyright}
       </Grid>
     </Grid>
+
   );
+
 };
 
 Footer.defaultProps = {

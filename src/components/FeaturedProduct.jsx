@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Button, Grid, Typography } from '@mui/material'
-import styles from '../features/Styles/featuredstyle'
+import styles from '../features/Styles/landpagestyle'
 
 function FeaturedProduct() {
   return (
