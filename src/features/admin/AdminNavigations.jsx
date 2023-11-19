@@ -17,7 +17,7 @@ import { styled } from '@mui/system';
 
 
 
-const drawerWidth = 200;
+const drawerWidth = 240;
 const StyledAppBar = styled('div')`
   display: block;
 `;
@@ -122,7 +122,7 @@ function AdminNavigations(props) {
         '& .MuiDrawer-paper': { 
           boxSizing: 'border-box', 
           width: drawerWidth, 
-          backgroundColor: '#44C9F2' },
+          backgroundColor: '#93e4c1' },
        
       }}
       open
