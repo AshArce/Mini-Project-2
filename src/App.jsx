@@ -5,7 +5,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { routes } from './router/index';
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
-import theme from './features/Styles/theme';
+import theme from './features/Styles/theme.js';
 
 const router = createBrowserRouter(routes)
 

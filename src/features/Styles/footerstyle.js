@@ -3,7 +3,6 @@ const styles = {
     position: "relative",
     margin: 0,
     p: 2,
-    backgroundColor: "#D5FFD0",
     zIndex: 1,
   },
   FooterListItem: {

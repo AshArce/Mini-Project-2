@@ -18,7 +18,7 @@ function FeaturedProduct() {
             FEATURED PRODUCT
           </Typography>
 
-          <Typography variant='p' sx={{
+          <Typography variant='body1' sx={{
 
           }}>
             Elevate your style with the iconic Jordan 1 Pine Green Low. Classic design meets comfort for a timeless fashion statement.
@@ -28,7 +28,7 @@ function FeaturedProduct() {
           </Typography>
           <Grid container spacing={0}>
             <Grid item sm={12} md={6} >
-              <Button
+              <Button variant='text'
                 style={styles.fpButton}
               >
                 Add to Kart

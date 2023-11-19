@@ -1,5 +1,3 @@
-// Popular Picks
-
 const styles = {
   //App Bar
   appBar: {
@@ -52,7 +50,6 @@ const styles = {
     // color: theme.palette.light_green[900],
   },
   button: {
-    // color: theme.palette.common.white,
     fontWeight: "bold",
     fontFamily: "Poppins",
     display: "flex",
@@ -64,7 +61,6 @@ const styles = {
     fontSize: "10px",
     textAlign: "center",
     width: 101,
-    backgroundColor: "green",
   },
   //Images
   ladyShopping: {

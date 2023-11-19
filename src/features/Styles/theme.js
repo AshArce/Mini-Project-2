@@ -1,5 +1,7 @@
 import { createTheme } from "@mui/material/styles";
 
+import "@fontsource/poppins";
+
 const theme = createTheme({
   breakpoints: {
     values: {
@@ -13,7 +15,7 @@ const theme = createTheme({
   palette: {
     mode: "light",
     primary: {
-      main: "#1e7f0a",
+      main: "#00b565",
     },
     secondary: {
       main: "#f50057",
@@ -35,11 +37,6 @@ const theme = createTheme({
       fontWeight: 500,
       lineHeight: 1,
     },
-    button: {
-      fontSize: "1rem",
-      lineHeight: 1.5,
-      fontWeight: 600,
-    },
     h3: {
       fontSize: "1.5rem",
     },
@@ -50,6 +47,11 @@ const theme = createTheme({
       fontSize: "1rem",
       fontWeight: 400,
       lineHeight: 1,
+    },
+    button: {
+      fontSize: "1rem",
+      lineHeight: 1.5,
+      fontWeight: 600,
     },
   },
   components: {
@@ -66,7 +68,6 @@ const theme = createTheme({
     MuiButton: {
       styleOverrides: {
         root: {
-          backgroundColor: "#60894a",
           color: "white",
           padding: "3% 10%",
           margin: "5px",

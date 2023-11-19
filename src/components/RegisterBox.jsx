@@ -27,7 +27,8 @@ const RegisterBox = (props) => {
           </Typography>
 
 
-          <Button style={styles.button} variant="contained">
+          <Button style={styles.button} variant="contained"
+            color="secondary">
             Create now
           </Button>
 
