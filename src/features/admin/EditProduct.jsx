@@ -78,6 +78,7 @@ function EditProduct() {
     const [category, setCategory] = useState('');
     const [color, setColor] = useState('');
     const [price, setPrice] = useState('');
+    const [status, setStatus] = useState('');
     const [description, setDescription] = useState('');
 
     const handleImageChange = (event) => {
@@ -151,10 +152,11 @@ function EditProduct() {
           onChange={(e) => setCategory(e.target.value)}
           sx={{ marginBottom: 2 }}
         >
-          {/* Add your category options as MenuItem components */}
-          <MenuItem value="category1">Category 1</MenuItem>
-          <MenuItem value="category2">Category 2</MenuItem>
-          {/* Add more categories as needed */}
+
+          <MenuItem value="Shoes">Shoes</MenuItem>
+          <MenuItem value="Tops">Tops</MenuItem>
+          <MenuItem value="Bottoms">Bottoms</MenuItem>
+          <MenuItem value="Accessory">Accesory</MenuItem>
         </Select>
         <Select
           label="Color"
@@ -174,6 +176,17 @@ function EditProduct() {
           value={price}
           onChange={(e) => setPrice(e.target.value)}
         />
+        <Select
+          label="Status"
+          fullWidth
+          value={status}
+          onChange={(e) => setStatus(e.target.value)}
+          sx={{ marginBottom: 2 }}
+        >
+          {/* Add your category options as MenuItem components */}
+          <MenuItem value="inStock">In Stock</MenuItem>
+          <MenuItem value="outOfStock">Out of Stock</MenuItem>
+        </Select>
         <InputField
           label="Description"
           multiline
@@ -182,7 +195,7 @@ function EditProduct() {
           value={description}
           onChange={(e) => setDescription(e.target.value)}
         />
-      </RightContainer>
+      
       
       
       <ActionButtons>
@@ -193,6 +206,7 @@ function EditProduct() {
           Cancel
         </Button>
       </ActionButtons>
+      </RightContainer>
     </ContainerWrapper>
     </StyledContainer>
     );
