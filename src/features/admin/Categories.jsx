@@ -1,19 +1,25 @@
-import React, { useState } from 'react'
-import AdminNavigations from './AdminNavigations'
-import { styled } from '@mui/system';
-import { useParams } from 'react-router-dom';
-import TextField from '@mui/material/TextField';
-import Select from '@mui/material/Select';
-import MenuItem from '@mui/material/MenuItem';
-import Button from '@mui/material/Button';
-import Paper from '@mui/material/Paper';
+import React from 'react';
+import AdminNavigations from './AdminNavigations';
+import { Container, styled } from '@mui/system';
 
+// Assuming StyledContainer and ContentContainer are custom styled components
+const StyledContainer = styled(Container)`
+  // Add your styles here
+`;
 
+const ContentContainer = styled(Container)`
+  // Add your styles here
+`;
 
 const Categories = ({ products }) => {
   if (!products) {
     // Handle the case when products are undefined or null
-    return <div>No products available.</div>;
+    return (
+      <StyledContainer>
+        <AdminNavigations />
+        <div>No products available.</div>
+      </StyledContainer>
+    );
   }
 
   // Categorize products based on their category
@@ -37,7 +43,7 @@ const Categories = ({ products }) => {
               {categoryProducts.map((product) => (
                 <li key={product.id}>
                   {/* Display product information */}
-                  {product.name} - {product.price}
+                  {product.name} - {product.status} - {product.date}
                 </li>
               ))}
             </ul>
@@ -48,4 +54,4 @@ const Categories = ({ products }) => {
   );
 };
 
-export default Categories
+export default Categories;
